@@ -33,14 +33,17 @@ does not match.
 
 # Example output
 
-`[garbled@polaris:~/test]$ ./arp.py -f out.txt -d 192.168.10.x -v
-Found xx:xx:xx:xx:xx:xx on Mebsuta
-Found 1e:xx:xx:xx:xx:xx on VM hadar
-Couldn't find xx:xx:xx:xx:xx:xx (baham) with ip 192.168.10.xx (TRENDnet, Inc.) in netbox`
+    [garbled@polaris:~/test]$ ./arp.py -f out.txt -d 192.168.10.x -v
+    Found xx:xx:xx:xx:xx:xx on Mebsuta
+    Found 1e:xx:xx:xx:xx:xx on VM hadar
+    Couldn't find xx:xx:xx:xx:xx:xx (baham) with ip 192.168.10.xx (TRENDnet, Inc.) in netbox
 
-`[garbled@polaris:~/test]$ ./arp.py -f out.txt -d 192.168.10.x -t xxxxxxxxxx -w
-Found 192.168.10.x on interface ens18 of VM hadar
-Adding mac xx:xx:xx:xx:xx:xx to interface ens18 on VM hadar
-Found 192.168.10.xx on interface Ethernet of device atria
-Adding mac xx:xx:xx:xx:xx:xx to interface Ethernet on device atria
-`
+    [garbled@polaris:~/test]$ ./arp.py -f out.txt -d 192.168.10.x -t xxxxxxxxxx -w
+    Found 192.168.10.x on interface ens18 of VM hadar
+    Adding mac xx:xx:xx:xx:xx:xx to interface ens18 on VM hadar
+    Found 192.168.10.xx on interface Ethernet of device atria
+    Adding mac xx:xx:xx:xx:xx:xx to interface Ethernet on device atria
+
+# acknowlegements
+
+Brutally hacked up from arp.py in https://github.com/Gelob/netbox_import
